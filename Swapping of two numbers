@@ -1,0 +1,24 @@
+#Swapping of two numbers
+num1 = int(input("Input first number : "))
+num2 = int(input("Input second number : "))
+
+print("The first number is : ",num1)
+print("The second number is : ",num2)
+
+temp = num2
+num2 = num1
+num1 = temp
+
+print("\nThe first number is : ",num1)
+print("The second number is : ",num2)
+
+
+output :
+
+Input first number : 3
+Input second number : 6
+The first number is :  3
+The second number is :  6
+
+The first number is :  6
+The second number is :  3
