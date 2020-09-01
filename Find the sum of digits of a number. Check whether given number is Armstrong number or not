@@ -1,0 +1,28 @@
+#Find the sum of digits of a number. Check whether given number is Armstrong number or not
+num = int(input("Enter a number : "))
+temp = num
+n = 10
+sum = 0
+digsum = 0
+while(temp!=0):
+    rem = temp%n
+    digsum = digsum + rem
+    cub = (rem*rem*rem)
+    sum = sum+cub
+    temp = int(temp/n)
+    
+print("Sum of digits of number is : ",digsum)
+print("sum of cubes of digits is : ",sum)
+if(sum == num):
+    print(num, " is a Armstrong number")
+else:
+    print(num, " is not a Armstrong number")
+
+
+
+output :
+
+Enter a number : 256
+Sum of digits of number is :  13
+sum of cubes of digits is :  349
+256  is not a Armstrong number
